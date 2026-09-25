@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Shop</title>
 </head>
-<body class="antialiased bg-gradient-to-br from-green-100 to-white">
+<body class="py-16 bg-purple-200">
     <div class="container px-6 mx-auto">
       <div
         class="flex flex-col text-center md:text-left md:flex-row h-screen justify-evenly md:items-center"
