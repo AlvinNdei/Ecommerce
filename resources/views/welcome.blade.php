@@ -24,7 +24,7 @@
         <div class="w-full md:w-full lg:w-9/12 mx-auto md:mx-0">
           <div class="bg-white p-10 flex flex-col w-full shadow-xl rounded-xl">
             <h2 class="text-2xl font-bold text-gray-800 text-left mb-5">
-              Sigin
+              Signin
             </h2>
             <form action="GET" class="w-full">
               <div id="input" class="flex flex-col w-full my-5">
@@ -72,7 +72,7 @@
                           ></path>
                         </svg>
                       </div>
-                      <div class="font-bold">Sigin</div>
+                      <div class="font-bold">Signin</div>
                     </div>
                   </button>
                   <div class="flex justify-evenly mt-5">
@@ -84,7 +84,7 @@
                     <a
                     href="signuppage"
                     class="w-full text-center font-medium text-gray-500"
-                    >Singup!</a
+                    >Signup!</a
                     >
                   </div>
                   </div>
