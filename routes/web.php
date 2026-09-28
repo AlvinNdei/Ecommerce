@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 Route::get('/homepage', function () {
     return view('homepage');
 })->name('homepage');
@@ -18,6 +18,9 @@ Route::get('dashboard', function () {
 Route::get('appliances', function () {
     return view('appliances');
 })->name('appliances');
+Route::get('signuppage', function () {
+    return view('signuppage');
+})->name('signuppage');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

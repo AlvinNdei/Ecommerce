@@ -26,7 +26,7 @@
             <h2 class="text-2xl font-bold text-gray-800 text-left mb-5">
               Sigin
             </h2>
-            <form action="" class="w-full">
+            <form action="GET" class="w-full">
               <div id="input" class="flex flex-col w-full my-5">
                 <label for="username" class="text-gray-500 mb-2"
                   >Username</label
@@ -34,7 +34,7 @@
                 <input
                   type="text"
                   id="username"
-                  placeholder="Please insert your username"
+                  placeholder="Please insert your email"
                   class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
                 />
               </div>
@@ -82,7 +82,7 @@
                     >Recover password!</a
                     >
                     <a
-                    href="#"
+                    href="signuppage"
                     class="w-full text-center font-medium text-gray-500"
                     >Singup!</a
                     >
