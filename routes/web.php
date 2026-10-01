@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,11 +23,12 @@ Route::get('appliances', function () {
 Route::get('signuppage', function () {
     return view('signuppage');
 })->name('signuppage');
+
 Route::get('register', function () {
-    return view('signuppage');
+    return view('welcome');
 })->name('register');
 
-Route::post('/register', [AuthController::class, 'register']);
+Route::post('register', [RegisteredUserController::class, 'store']);
 
 
 
