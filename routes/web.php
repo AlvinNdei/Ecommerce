@@ -22,6 +22,9 @@ Route::get('appliances', function () {
 Route::get('signuppage', function () {
     return view('signuppage');
 })->name('signuppage');
+Route::get('register', function () {
+    return view('signuppage');
+})->name('register');
 
 Route::post('/register', [AuthController::class, 'register']);
 
