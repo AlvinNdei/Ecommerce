@@ -9,9 +9,7 @@
 </head>
 <body class="py-16 bg-purple-200">
     <div class="container px-6 mx-auto">
-      <div
-        class="flex flex-col text-center md:text-left md:flex-row h-screen justify-evenly md:items-center"
-      >
+      <div class="flex flex-col text-center md:text-left md:flex-row h-screen justify-evenly md:items-center">
         <div class="flex flex-col w-full">
           <div>
             <img src="{{ asset('images/images.jpg') }}" alt="Image of a person online shopping" class="rounded-[20px]">
@@ -26,69 +24,56 @@
             <h2 class="text-2xl font-bold text-gray-800 text-left mb-5">
               Signin
             </h2>
-            <form action="GET" class="w-full">
-              <div id="input" class="flex flex-col w-full my-5">
-                <label for="username" class="text-gray-500 mb-2"
-                  >Username</label
-                >
-                <input
-                  type="text"
-                  id="username"
-                  placeholder="Please insert your email"
-                  class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
-                />
-              </div>
-              <div id="input" class="flex flex-col w-full my-5">
-                <label for="password" class="text-gray-500 mb-2"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="Please insert your password"
-                  class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
-                />
-              </div>
-              <a href="{{route('homepage')}}">
-                <div id="button" class="flex flex-col w-full my-5">
-                  <button
-                  type="button"
-                  class="w-full py-4 bg-green-600 rounded-lg text-green-100"
-                  >
-                    <div class="flex flex-row items-center justify-center">
-                      <div class="mr-2">
-                        <svg
-                        class="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-                          ></path>
-                        </svg>
-                      </div>
-                      <div class="font-bold">Signin</div>
+            <form action="{{ route('login') }}" method="POST" class="w-full">
+                @csrf
+
+                @if ($errors->any())
+                    <div class="mb-4 text-red-600 text-sm">
+                        @foreach ($errors->all() as $error)
+                            <p>{{ $error }}</p>
+                        @endforeach
                     </div>
-                  </button>
-                  <div class="flex justify-evenly mt-5">
-                    <a
-                    href="#"
-                    class="w-full text-center font-medium text-gray-500"
-                    >Recover password!</a
+                @endif
+
+                <div id="input" class="flex flex-col w-full my-5">
+                    <label for="email" class="text-gray-500 mb-2">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Please insert your email"
+                        class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
+                    />
+                </div>
+                <div id="input" class="flex flex-col w-full my-5">
+                    <label for="password" class="text-gray-500 mb-2">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Please insert your password"
+                        class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
+                    />
+                </div>
+                <div id="button" class="flex flex-col w-full my-5">
+                    <button
+                        type="submit"
+                        class="w-full py-4 bg-green-600 rounded-lg text-green-100"
                     >
-                    <a
-                    href="signuppage"
-                    class="w-full text-center font-medium text-gray-500"
-                    >Signup!</a
-                    >
-                  </div>
-                  </div>
-              </a>
+                        <div class="flex flex-row items-center justify-center">
+                            <div class="mr-2">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+                                </svg>
+                            </div>
+                            <div class="font-bold">Signin</div>
+                        </div>
+                    </button>
+                    <div class="flex justify-evenly mt-5">
+                        <a href="#" class="w-full text-center font-medium text-gray-500">Recover password!</a>
+                        <a href="{{ route('signuppage') }}" class="w-full text-center font-medium text-gray-500">Signup!</a>
+                    </div>
+                </div>
             </form>
           </div>
         </div>
