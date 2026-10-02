@@ -28,7 +28,7 @@ Route::get('register', function () {
     return view('welcome');
 })->name('register');
 
-Route::post('register', [RegisteredUserController::class, 'store']);
+Route::post('/register', [RegisteredUserController::class, 'store']);
 
 
 
