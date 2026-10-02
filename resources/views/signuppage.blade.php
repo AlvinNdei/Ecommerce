@@ -90,14 +90,6 @@
     <div class="max-w-md w-full p-6">
       <h1 class="text-3xl font-semibold mb-6 text-black text-center">Sign Up</h1>
       <div class="mt-4 flex flex-col lg:flex-row items-center justify-between">
-
-        @if($errors->any())
-        <ul class="text-red 600 text-sm mb-4">
-          @foreach ($errors->all() as $error )
-          <li>{{$error}}</li> 
-          @endforeach)
-        </ul>
-        @endif
       <form action="/register" method="POST" class="space-y-4">
         @csrf
         <div>
