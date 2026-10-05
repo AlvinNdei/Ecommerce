@@ -16,7 +16,7 @@
           </div>
           <h1 class="text-5xl text-gray-800 font-bold"></h1>
           <p class="w-12/12 mx-auto md:mx-0 text-gray-500">
-            Shopping made easy with SHOP website. Enjoy your shopping experience.
+            Shopping made easy with SHOP. Enjoy your shopping experience.
           </p>
         </div>
         <div class="w-full md:w-full lg:w-9/12 mx-auto md:mx-0">
