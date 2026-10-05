@@ -7,7 +7,7 @@
     <title>Computing</title>
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body  class="py-16 bg-purple-200">
+<body>
  @include('partials.navbar')
     <!-- component -->
 <!-- UI card from https://uxplanet.org/ultimate-guide-for-designing-ui-cards-59488a91b44f -->

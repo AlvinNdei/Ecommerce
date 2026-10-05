@@ -12,7 +12,7 @@
     <!-- component -->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-<section class="h-screen bg-gray-100 px-4 text-gray-600 antialiased" x-data="app">
+<section class="h-screen  bg-purple-200 px-4 text-gray-600 antialiased" x-data="app">
     <div class="flex h-full flex-col justify-center">
         <!-- Table -->
         <div class="mx-auto w-full max-w-2xl rounded-sm border border-gray-200 bg-white shadow-lg">
