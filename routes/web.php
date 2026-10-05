@@ -32,6 +32,10 @@ Route::middleware('auth')->group(function () {
         return view('fashion');
     })->name('fashion');
 
+    Route::get('cart', function () {
+        return view('cart');
+    })->name('cart');
+
 
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
