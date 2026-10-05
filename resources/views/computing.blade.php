@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Appliances</title>
+    <title>Computing</title>
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body  class="py-16 bg-purple-200">
@@ -25,7 +25,7 @@
       </div>
       <div class="mt-4 pl-2 mb-2 flex justify-between ">
         <div>
-          <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
+          <p class="text-lg font-semibold text-gray-900 mb-0">Computer 1</p>
           <p class="text-md text-gray-800 mt-0">$340</p>
         </div>
         <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
@@ -47,7 +47,7 @@
       </div>
       <div class="mt-4 pl-2 mb-2 flex justify-between ">
         <div>
-          <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
+          <p class="text-lg font-semibold text-gray-900 mb-0">Computer 2</p>
           <p class="text-md text-gray-800 mt-0">$340</p>
         </div>
         <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
