@@ -8,6 +8,7 @@
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body class="antialiased bg-gradient-to-br from-green-100 to-white">
+    @include('partials.navbar')
     <!-- component -->
 <div class="py-16 bg-purple-200">  
     <div class="container m-auto px-6 text-gray-500 md:px-12 xl:px-0">
