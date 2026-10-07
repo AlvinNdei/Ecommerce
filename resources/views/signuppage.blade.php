@@ -9,9 +9,9 @@
 </head>
 <body>
     <!-- component -->
-<div class="flex h-screen">
+<div class="flex h-screen py-16 bg-purple-200">
   <!-- Left Pane -->
-  <div class="hidden lg:flex items-center justify-center flex-1 bg-white text-black">
+  <div class="hidden lg:flex items-center justify-center flex-1 py-16 bg-purple-200 text-black">
     <div class="max-w-md text-center">
      <div>
           <img src="{{ asset('images/images.jpg') }}" alt="Image of a person online shopping" class="rounded-[20px]">
@@ -86,7 +86,7 @@
     </div>
   </div>
   <!-- Right Pane -->
-  <div class="w-full bg-gray-100 lg:w-1/2 flex items-center justify-center">
+  <div class="w-full py-16 bg-purple-200 lg:w-1/2 flex items-center justify-center">
     <div class="max-w-md w-full p-6">
       <h1 class="text-3xl font-semibold mb-6 text-black text-center">Sign Up</h1>
       <div class="mt-4 flex flex-col lg:flex-row items-center justify-between">
@@ -94,18 +94,18 @@
         @csrf
         <div>
           <label for="username">Username</label>
-          <input type="text" id="username" name="username" class="...">
+          <input type="text" id="username" name="username" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
         </div>
         <div>
-          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <label for="email">Email</label>
           <input type="text" id="email" name="email" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
         </div>
         <div>
-          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <label for="password">Password</label>
           <input type="password" id="password" name="password" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
         </div>
         <div>
-          <label for="password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+          <label for="password">Confirm Password</label>
           <input type="password" id="password" name="password_confirmation" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
         </div>
         <div>
