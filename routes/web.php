@@ -7,10 +7,6 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/homepage', function () {
-    return view('homepage');
-})->name('homepage');
-
 Route::get('signuppage', function () {
     return view('signuppage');
 })->name('signuppage');
