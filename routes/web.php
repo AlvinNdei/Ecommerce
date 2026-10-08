@@ -32,6 +32,10 @@ Route::middleware('auth')->group(function () {
         return view('cart');
     })->name('cart');
 
+    Route::get('payment', function () {
+        return view('payment');
+    })->name('payment');
+
 
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
