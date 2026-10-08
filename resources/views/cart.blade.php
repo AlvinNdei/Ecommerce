@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Cart</title>
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body>
+    @include('partials.navbar')
     <!-- component -->
 <div class="flex flex-col md:flex-row w-screen h-full px-14 py-7">
 
@@ -98,12 +99,16 @@
                 </div>
             </div>
             <div class="flex gap-2">
-                <button class="transition-colors text-sm bg-blue-600 hover:bg-blue-700 p-2 rounded-sm w-full text-white text-hover shadow-md">
+                <a href="{{route('payment')}}">
+                    <button type="button" class="transition-colors text-sm bg-blue-600 hover:bg-blue-700 p-2 rounded-sm w-full text-white text-hover shadow-md">
                         FINISH  
-                </button>
-                <button class="transition-colors text-sm bg-white border border-gray-600 p-2 rounded-sm w-full text-gray-700 text-hover shadow-md">
+                    </button>
+                </a>
+                <a href="{{route('dashboard')}}">
+                    <button type="button" class="transition-colors text-sm bg-white border border-gray-600 p-2 rounded-sm w-full text-gray-700 text-hover shadow-md">
                         ADD MORE PRODUCTS
-                </button>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
