@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CartController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -11,13 +11,6 @@ Route::get('/', function () {
 Route::get('signuppage', function () {
     return view('signuppage');
 })->name('signuppage');
-
-
-
-Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
-Route::post('/cart/add/{product}', [CartController::class, 'add'])->name('cart.add');
-Route::patch('/cart/{id}', [CartController::class, 'update'])->name('cart.update');
-Route::delete('/cart/{id}', [CartController::class, 'remove'])->name('cart.remove');
 
 Route::middleware('auth')->group(function () {
     Route::get('dashboard', function () {
