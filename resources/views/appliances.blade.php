@@ -25,7 +25,7 @@
       </div>
       <div class="mt-4 pl-2 mb-2 flex justify-between ">
         <div>
-          <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
+          <p class="text-lg font-semibold text-gray-900 mb-0">Appliances 1</p>
           <p class="text-md text-gray-800 mt-0">$340</p>
         </div>
         <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
@@ -47,7 +47,7 @@
       </div>
       <div class="mt-4 pl-2 mb-2 flex justify-between ">
         <div>
-          <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
+          <p class="text-lg font-semibold text-gray-900 mb-0">Appliances 2</p>
           <p class="text-md text-gray-800 mt-0">$340</p>
         </div>
         <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
