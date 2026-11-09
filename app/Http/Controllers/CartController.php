@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Product;
+use App\Models\Appliance;
 
 class CartController extends Controller
 {
@@ -11,7 +11,7 @@ class CartController extends Controller
     return view ('cart', ['cart'=>session('cart',[])]);
    }
 
-   public funtion add(Product $product){
+   public funtion add(Appliance $product){
     $cart=session()->get('cart',[]);
 
     if (isset($cart[$product->id])){

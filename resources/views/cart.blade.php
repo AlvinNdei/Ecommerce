@@ -15,7 +15,7 @@
     <!-- My Cart -->
     <div class="w-full flex flex-col h-fit gap-4 p-4 ">
         <p class="text-blue-900 text-xl font-extrabold">My cart</p>
-        @forelse($cart as $id =>$item)
+        @forelse($appliances as $appliance)
 
         <!-- Product -->
         <div class="flex flex-col p-4 text-lg font-semibold shadow-md border rounded-sm">
