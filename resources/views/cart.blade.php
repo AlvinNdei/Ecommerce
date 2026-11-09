@@ -35,7 +35,7 @@
                     <p class="text-gray-600 font-normal text-sm line-through">$99.99
                         <span class="text-emerald-500 ml-2">(-50% OFF)</span>
                     </p>
-                    <p class="text-gray-800 font-normal text-xl">$49.99</p>
+                    <p class="text-gray-800 font-normal text-xl">${{ number_format($item['price'], 2) }}</p>
                 </div>
                 <!-- Remove Product Icon -->
                 <div class="self-center">
