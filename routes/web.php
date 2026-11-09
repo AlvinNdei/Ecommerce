@@ -22,7 +22,7 @@ Route::middleware('auth')->group(function () {
     })->name('dashboard');
 
     Route::get('appliances', function () {
-        return view('appliances');
+        return view('appliances', ['appliances' => \App\Models\Product::all()]);
     })->name('appliances');
 
     Route::get('computing', function () {
