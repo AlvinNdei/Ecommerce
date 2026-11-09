@@ -15,6 +15,7 @@
     <!-- My Cart -->
     <div class="w-full flex flex-col h-fit gap-4 p-4 ">
         <p class="text-blue-900 text-xl font-extrabold">My cart</p>
+        @forelse($cart as $id =>$item)
 
         <!-- Product -->
         <div class="flex flex-col p-4 text-lg font-semibold shadow-md border rounded-sm">
@@ -68,6 +69,9 @@
                 </button>
             </div>
         </div>
+        @empty
+        <p class="text-gray-600">Your cart is empty.</p>
+        @endforelse
     </div>
 
     <!-- Purchase Resume -->
